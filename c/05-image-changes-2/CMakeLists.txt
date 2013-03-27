@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+project( ImageChange )
+find_package( OpenCV REQUIRED )
+add_executable( ImageChange ImageChange.cpp )
+target_link_libraries( ImageChange ${OpenCV_LIBS} )
