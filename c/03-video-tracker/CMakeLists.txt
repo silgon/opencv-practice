@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+project( VideoTracker )
+find_package( OpenCV REQUIRED )
+add_executable( VideoTracker VideoTracker.cpp )
+target_link_libraries( VideoTracker ${OpenCV_LIBS} )
