@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+project( ImageSmooth )
+find_package( OpenCV REQUIRED )
+add_executable( ImageSmooth ImageSmooth.cpp )
+target_link_libraries( ImageSmooth ${OpenCV_LIBS} )
