@@ -9,6 +9,7 @@ int main(int, char**)
     if(!cap.isOpened()) return -1;
 
     Mat frame, edges;
+    namedWindow("frame",1);
     namedWindow("edges",1);
     for(;;)
     {
