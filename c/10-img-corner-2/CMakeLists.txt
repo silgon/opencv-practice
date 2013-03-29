@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+project( CornerDetector )
+find_package( OpenCV REQUIRED )
+add_executable( CornerDetector CornerDetector.cpp )
+target_link_libraries( CornerDetector ${OpenCV_LIBS} )
