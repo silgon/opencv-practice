@@ -1,8 +1,11 @@
 All the files in c or c++ need to be compiled. When you're inside one of the projects (one of the folders inside this path), you can do the next in your terminal:
-
+With CMake:
 mkdir build
 cd build
 cmake ..
 make
 
+
+With Make:
+make comp
 After you introduced the code, you'll see the executable file. Good luck ;)
