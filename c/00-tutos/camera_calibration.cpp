@@ -229,7 +229,6 @@ int main(int argc, char* argv[])
 			cout << "Invalid input detected. Application stopping. " << endl;
 			return -1;
 		}
-
     vector<vector<Point2f> > imagePoints;
     Mat cameraMatrix, distCoeffs;
     Size imageSize;

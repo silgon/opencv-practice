@@ -2,8 +2,8 @@ NAME=test.cpp
 OUTPUT=out
 
 comp:
-	g++ $(NAME) -o $(OUTPUT) `pkg-config --cflags opencv` `pkg-config --libs opencv`
+	g++ $(NAME) -o $(OUTPUT) `pkg-config --cflags --libs opencv`
 run: $(OUTPUT)
 	./$(OUTPUT)
 # %.run: %.cpp
-# 	g++ $< -o $@ `pkg-config --cflags opencv` `pkg-config --libs opencv`
+# 	g++ $< -o $@ `pkg-config --cflags --libs opencv`
